@@ -1534,9 +1534,9 @@
 			}
 			// Process remainder
 			function match_part(){
-				var m = this.slice(0, parts[i].length),
-					p = parts[i].slice(0, m.length);
-				return m == p;
+				var m = this.slice(0, parts[i].length).toLowerCase(),
+					p = parts[i].slice(0, m.length).toLowerCase();
+				return m === p;
 			}
 			if (parts.length === fparts.length){
 				var cnt;
